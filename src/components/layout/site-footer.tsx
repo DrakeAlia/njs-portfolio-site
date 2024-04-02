@@ -28,7 +28,7 @@ const SiteFooter = () => {
         <div className="flex scroll-m-20 items-center justify-between gap-5">
           <div className="flex gap-5">
             <Link
-              href="https://www.linkedin.com/in/jorge-enrique-assaf/"
+              href="https://www.linkedin.com/in/drake-alia/"
               target="_blank"
               rel="noreferrer"
               className={cn(buttonVariants())}
