@@ -105,7 +105,7 @@ const ProjectsCard: FC<ProjectsCardProps> = ({ projects }) => {
               <div className="flex items-center gap-5">
                 <Link
                   aria-label="View code on GitHub"
-                  href={project.github}
+                  href="https://github.com/DrakeAlia/njs-todo-list"
                   target="_blank"
                   rel="noopener noreferrer"
                   className={cn(
