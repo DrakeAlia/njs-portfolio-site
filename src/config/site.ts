@@ -49,30 +49,5 @@ export const siteConfig = {
         },
       ],
     },
-    {
-      title: "Lofi",
-      items: [
-        {
-          title: "beats to study to",
-          href: "https://www.youtube.com/watch?v=jfKfPfyJRdk",
-          external: true,
-        },
-        {
-          title: "beats to chill to",
-          href: "https://www.youtube.com/watch?v=rUxyKA_-grg",
-          external: true,
-        },
-        {
-          title: "a fresh start",
-          href: "https://www.youtube.com/watch?v=rwionZbOryo",
-          external: true,
-        },
-        {
-          title: "coffee to go",
-          href: "https://www.youtube.com/watch?v=2gliGzb2_1I",
-          external: true,
-        },
-      ],
-    },
   ],
 };
