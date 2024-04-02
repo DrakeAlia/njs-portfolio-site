@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { FADE_DOWN_ANIMATION_VARIANTS } from "@/constans";
+import { FADE_DOWN_ANIMATION_VARIANTS } from "@/constants";
 import HomeScene from "@/scenes/home-screen";
 import { domAnimation, LazyMotion, m } from "framer-motion";
 
@@ -32,20 +32,27 @@ const Hero = () => {
             variants={FADE_DOWN_ANIMATION_VARIANTS}
             className="text-4xl font-bold md:text-6xl"
           >
-            Hi, I’m Jorge Assaf.
+            Hello, I’m Drake Alia!
           </m.h1>
           <m.h2
             variants={FADE_DOWN_ANIMATION_VARIANTS}
             className=" my-1 text-2xl font-semibold text-primary md:text-4xl"
           >
-            Front-end Developer.
+            A Frontend Engineer
           </m.h2>
           <m.p
             variants={FADE_DOWN_ANIMATION_VARIANTS}
             className="mt-3 text-base text-muted-foreground md:text-xl"
           >
-            Based in Mexico City. I take great pleasure in creating and
-            developing applications for both web and mobile devices.
+            Who hails from the vibrant and tech-forward Greater Seattle Area. I
+            blend my expertise in Typescript, Next.js, React, and Tailwind CSS
+            to craft engaging, responsive, and user-friendly web experiences.
+            <br />
+            <br />
+            My approach to frontend engineering is akin to the art of cooking—a
+            process where meticulous preparation, innovative use of ingredients,
+            and an understanding of complex techniques come together to create
+            something extraordinary.
           </m.p>
           <m.div
             variants={FADE_DOWN_ANIMATION_VARIANTS}
@@ -53,7 +60,7 @@ const Hero = () => {
           >
             <Link
               arial-label="GitHub"
-              href="https://github.com/JorgeAssaf"
+              href="https://github.com/DrakeAlia"
               target="_blank"
               rel="noopener noreferrer"
               className={cn(buttonVariants({ variant: "default" }))}
@@ -64,7 +71,7 @@ const Hero = () => {
 
             <Link
               arial-label="LinkedIn"
-              href="https://www.linkedin.com/in/jorge-enrique-assaf/"
+              href="https://www.linkedin.com/in/drake-alia/"
               target="_blank"
               rel="noopener noreferrer"
               className={cn(buttonVariants({ variant: "default" }))}
@@ -76,7 +83,7 @@ const Hero = () => {
               arial-label="Download Resume"
               target="_blank"
               rel="noopener noreferrer"
-              href="https://drive.google.com/file/d/1KGmCNQLKOSRosglp8x-hNxsHgeHxkGPr/view?usp=sharing"
+              href="https://drive.google.com/file/d/1YiHFXYnbhDaHWMv_-Atq5Ww9ybbrSgsg/view?usp=sharing"
               className={cn(
                 buttonVariants({
                   variant: "outline",
@@ -94,6 +101,22 @@ const Hero = () => {
           <HomeScene />
         </m.div>
       </m.div>
+        <p>
+            3D Model by{" "}
+            <Link
+                target="_blank"
+                href="https://www.craftz.dog/"
+                rel="noopener noreferrer"
+                className={cn(
+                buttonVariants({
+                    variant: "link",
+                }),
+                "p-0"
+                )}
+            >
+                Takuya Matsuyama.
+            </Link>
+        </p>
     </LazyMotion>
   );
 };

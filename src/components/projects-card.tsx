@@ -42,7 +42,7 @@ const ProjectsCard: FC<ProjectsCardProps> = ({ projects }) => {
                   alt={project?.name}
                   className={cn(
                     "object-cover",
-                    project.name === "Netflix clone" ? "object-left-top" : ""
+                    project.name === "Todo List Table" ? "object-left-top" : ""
                   )}
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   fill

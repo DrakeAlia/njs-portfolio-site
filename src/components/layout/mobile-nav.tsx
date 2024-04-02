@@ -17,6 +17,7 @@ import {
   SheetTrigger,
 } from "../ui/sheet";
 import { ThemeToggle } from "./theme-toggle";
+import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 
 interface MobileNavProps {
   items: MainNavItem[];
@@ -29,9 +30,10 @@ const MobileNav: FC<MobileNavProps> = ({ items }) => {
     <div className="flex h-20 items-center justify-between md:hidden">
       <div className="flex text-left md:flex">
         <Link aria-label="Home" href="/">
-          <p className="text-2xl font-bold md:flex">
-            JA<span className="text-primary">.</span>
-          </p>
+            <Avatar className="h-9 w-9">
+              <AvatarImage src="/avatar.png" alt="drakealia" />
+              <AvatarFallback>DA</AvatarFallback>
+            </Avatar>
         </Link>
       </div>
       <ThemeToggle />
@@ -55,7 +57,7 @@ const MobileNav: FC<MobileNavProps> = ({ items }) => {
                 onClick={() => setIsOpen(false)}
               >
                 <p className="text-2xl font-bold md:inline-block">
-                  JA<span className="text-primary">.</span>
+                  DA<span className="text-primary"></span>
                 </p>
               </Link>
             </div>

@@ -5,7 +5,6 @@ import { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import { Html } from "@react-three/drei";
 
-
 const Dog = dynamic(() => import("@/scenes/Model").then((mod) => mod.Dog), {
   ssr: false,
   loading: () => {

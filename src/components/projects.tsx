@@ -1,7 +1,7 @@
 "use client";
 
 import type { FC } from "react";
-import { FADE_DOWN_ANIMATION_VARIANTS } from "@/constans";
+import { FADE_DOWN_ANIMATION_VARIANTS } from "@/constants";
 import { motion } from "framer-motion";
 
 import ProjectsCard from "@/components/projects-card";

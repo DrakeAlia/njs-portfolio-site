@@ -2,7 +2,7 @@
 
 import { useCallback, useTransition, type FC } from "react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
-import { FADE_LEFT_ANIMATION_VARIANTS } from "@/constans";
+import { FADE_LEFT_ANIMATION_VARIANTS } from "@/constants";
 import { motion } from "framer-motion";
 
 import { cn, slugify } from "@/lib/utils";

@@ -22,11 +22,11 @@ export const siteConfig = {
       href: "/projects",
       items: [],
     },
-    {
-      title: "Blog",
-      href: "/blog",
-      items: [],
-    },
+    // {
+    //   title: "Blog",
+    //   href: "/blog",
+    //   items: [],
+    // },
     {
       title: "About",
       href: "/about",

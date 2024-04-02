@@ -2,7 +2,7 @@
 
 import type { FC } from "react";
 import Link from "next/link";
-import { FADE_DOWN_ANIMATION_VARIANTS } from "@/constans";
+import { FADE_DOWN_ANIMATION_VARIANTS } from "@/constants";
 import { motion } from "framer-motion";
 
 import { cn, formatDate } from "@/lib/utils";

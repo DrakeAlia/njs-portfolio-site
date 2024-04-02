@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { ArrowDown } from "@/components/icons";
-import { FADE_DOWN_ANIMATION_VARIANTS } from "@/constans";
+import { FADE_DOWN_ANIMATION_VARIANTS } from "@/constants";
 const Scroll = () => {
   return (
     <motion.div

@@ -3,11 +3,11 @@
 import type { FC } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-
 import { cn } from "@/lib/utils";
 import type { MainNavItem } from "@/app/types/site";
-
 import { ThemeToggle } from "./theme-toggle";
+import { Avatar } from "../ui/avatar";
+import { AvatarFallback, AvatarImage } from "@radix-ui/react-avatar";
 
 interface MainNavProps {
   items?: MainNavItem[];
@@ -22,9 +22,10 @@ const MainNav: FC<MainNavProps> = ({ items }) => {
           href="/"
           className="hidden items-center space-x-2 md:flex"
         >
-          <p className="hidden text-2xl font-bold md:inline-block">
-            JA<span className="text-primary">.</span>
-          </p>
+            <Avatar className="h-10 w-10">
+              <AvatarImage src="/avatar.png" alt="drakealia" />
+              <AvatarFallback>DA</AvatarFallback>
+            </Avatar>
         </Link>
 
         <div className="flex items-center gap-6">
