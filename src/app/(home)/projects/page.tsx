@@ -7,7 +7,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Projects",
-  description: "My latest projects",
+  description: "My latest projects and contributions to the open-source community.",
 };
 
 const ProjectsPage = async () => {
@@ -17,7 +17,7 @@ const ProjectsPage = async () => {
       <Header
         page
         title="Projects"
-        description="My latest projects"
+        description="My latest projects and contributions to the open-source community."
       />
       <Projects projects={projects} />
     </section>
