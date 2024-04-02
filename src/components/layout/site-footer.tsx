@@ -4,7 +4,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 
 import { cn } from "@/lib/utils";
-import { Fiverr, LinkedIn } from "@/components/icons";
+import { GitHub, LinkedIn } from "@/components/icons";
 
 import { buttonVariants } from "../ui/button";
 
@@ -25,7 +25,29 @@ const SiteFooter = () => {
       className="my-10 w-full border-t bg-background"
     >
       <div className="container py-7">
-        <div className="flex scroll-m-20 items-center justify-between gap-5"></div>
+        <div className="flex scroll-m-20 items-center justify-between gap-5">
+          <div className="flex gap-5">
+            <Link
+              href="https://www.linkedin.com/in/jorge-enrique-assaf/"
+              target="_blank"
+              rel="noreferrer"
+              className={cn(buttonVariants())}
+            >
+              <LinkedIn className="size-6" />
+              <span className="sr-only">LinkedIn</span>
+            </Link>
+            <Link
+              arial-label="GitHub"
+              href="https://github.com/DrakeAlia"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={cn(buttonVariants({ variant: "default" }))}
+            >
+              <GitHub className="size-6" />
+              <span className="sr-only">GitHub</span>
+            </Link>
+          </div>
+        </div>
         <p className="text-balance text-center text-lg leading-loose text-muted-foreground md:text-left">
           Built by{" "}
           <Link
